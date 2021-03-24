@@ -179,7 +179,28 @@ function internPrompt() {
 
 function generateHTML(){
 // fswrite - just the top html - run once
+const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profile Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-center" id="titlenav">Team Profile</span>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">`;
+fs.writeFile("../output.html", html, (err)=> err ? console.log(err) : console.log("Yay, you sucessfully wrote a generateHTML file!" ));
 // fs.appendFile each item in the employees array
+
+
 // fs append file with scripts
 
 
